@@ -3,5 +3,5 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    dd(DB::table('users')->count());
+    dd(\Illuminate\Support\Facades\DB::table('users')->count());
 });
